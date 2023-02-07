@@ -4,6 +4,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const app = express();
+app.use('/authentication', require('./controllers/authentication'))
+
 
 // Express Settings
 app.use(cors())
